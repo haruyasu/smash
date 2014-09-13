@@ -1,78 +1,648 @@
-<!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Smash by haruyasu</title>
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script src="javascripts/respond.js"></script>
-    <!--[if lt IE 9]>
-      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <!--[if lt IE 8]>
-    <link rel="stylesheet" href="stylesheets/ie.css">
-    <![endif]-->
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="keywords" content="テニス,バドミントン,サークル,SMASH,愛知,稲沢,祖父江">
+  <meta name="description" content="愛知県稲沢市祖父江の森を中心に活動しているテニス・バドミントンサークルです。">
+  <meta name="author" content="haru">
+  <meta name="copyright" content="SMASH!!">
+  <meta name="robots" content="noindex,nofollow"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>テニバドサークル「SMASH!!」</title>
 
-  </head>
-  <body>
-      <div id="header">
-        <nav>
-          <li class="fork"><a href="https://github.com/haruyasu/smash">View On GitHub</a></li>
-          <li class="downloads"><a href="https://github.com/haruyasu/smash/zipball/master">ZIP</a></li>
-          <li class="downloads"><a href="https://github.com/haruyasu/smash/tarball/master">TAR</a></li>
-          <li class="title">DOWNLOADS</li>
-        </nav>
-      </div><!-- end header -->
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/flexslider.css">
+  <link rel="stylesheet" href="css/flat_line_styles.css">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,300,400italic,400,600italic,600,700italic,700,800italic,800" type="text/css">
 
-    <div class="wrapper">
+  <link rel="icon" href="img/favicon.ico">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="feed/">
+  <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+  <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
 
-      <section>
-        <div id="title">
-          <h1>Smash</h1>
-          <p></p>
-          <hr>
-          <span class="credits left">Project maintained by <a href="https://github.com/haruyasu">haruyasu</a></span>
-          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></span>
+</head>
+<body>
+
+  <div class="para"></div>
+
+  <header>
+    <div class="navbar navbar-fixed-top navbar-inverse" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" tabindex="0" accesskey="A" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#home"></a>
         </div>
-
-        <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
-
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
-
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
-
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
-
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
-
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
-
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
-
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li id="about-li"><a href="#about">ABOUT</a></li>
+            <li id="member-li"><a href="#member">MEMBER</a></li>
+            <li id="tennis-li"><a href="#tennis">TENNIS</a></li>
+            <li id="badminton-li"><a href="#badminton">BADMINTON</a></li>
+            <li id="schdule-li"><a href="#schdule">SCHDULE</a></li>
+            <li id="gallery-li"><a href="#gallery">GALLERY</a></li>
+            <li id="contact-li"><a href="#contact">CONTACT</a></li>
+          </ul>
+        </div>
+      </div>
     </div>
-    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
-    
-  </body>
+  </header>
+
+  <div id="home">
+    <div id="toptitle" style="background-image:url(img/2.jpg)">
+      <div id="titlesvg2">
+        <div id="titlesvg"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="teni">
+  <div id="about">
+    <div class="container">
+      <div class="page-title">
+        <h2><span>ABOUT</span></h2>
+      </div>
+      <p>
+        私達「SMASH!!」は愛知県稲沢市祖父江の森を中心に活動しているテニス・バドミントンサークルです。<br>
+        メンバーは20代で毎週日曜日の午前中に活動をしていて、<br>
+        テニスとバドミントンを交互に練習しています。<br>
+        現在チームメンバーを募集中です。<br>
+        テニスやバドミントンが好きな方や運動不足を解消したい方など、是非気軽にご連絡下さい。
+      </p>
+      <br>
+      <div class="row">
+        <div class="col-sm-4 le_ri_pa">
+          <span class="svg-icon flat-line" id="line-home"></span>
+          <h3>私達と一緒に</h3>
+          <p>
+            サークルを盛り上げていきましょう。立ち上げたばかりなので、一緒にサークルを作り上げていく楽しさを、あじわってみませんか。
+          </p>
+        </div>
+        <div class="col-sm-4 le_ri_pa">
+          <span class="svg-icon flat-line" id="line-thumbsup"></span>
+          <h3>和気あいあいと</h3>
+          <p>
+            楽しくテニスとバドミントンをしています。メンバーが増えていけば、テニスとバドミントン以外のイベントも増やしていきたいと思います。
+          </p>
+        </div>
+        <div class="col-sm-4 le_ri_pa">
+          <span class="svg-icon flat-line" id="line-winner"></span>
+          <h3>大会目指して</h3>
+          <p>
+            目標に向かって練習しています。最初は誰でも初心者です。みんなで上手くなっていきましょう。
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <div id="member">
+    <div class="container">
+      <div class="page-title2">
+        <h2><span>MEMBER</span></h2>
+      </div>
+      <div class="row">
+        <div class="col-sm-2">
+        </div>
+        <div class="col-sm-4 le_ri_pa">
+          <div class="avatar">
+            <img class="img-circle" src="img/haru.jpg" alt="haru">
+          </div>
+          <div class="team-name">Haru</div>
+          <div class="position">チーム代表</div>
+          <p>
+            テニスとバドミントンにはまりサークルを立ち上げました。初心者ですが負けん気は人一倍です。職業はエンジニアで休みの日はとにかく運動しています。目標に向かって頑張るのが好きです。
+          </p>
+        </div>
+        <div class="col-sm-4 le_ri_pa">
+          <div class="avatar">
+            <img class="img-circle" src="img/shinya.jpg" alt="shinya">
+          </div>
+          <div class="team-name">Shinya</div>
+          <div class="position">メンバー</div>
+          <p>
+            真面目で見た目によらず根性があり努力家です。旅行が大好きで全国を旅しています。天気には人一倍詳しいです。
+          </p>
+        </div>
+        <div class="col-sm-2">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="tenibk">
+  <div id="tennis">
+    <div class="container">
+      <div class="page-title">
+        <h2><span>TENNIS</span></h2>
+      </div>
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="waku">
+          <h3>テニスの魅力</h3>
+          <div style="text-align:left;">
+            <p style="font-size:130%;"><strong>■生涯スポーツである</strong></p>
+            <p>　テニスは幅広い年齢で一緒に楽しめます。</p>
+            <p style="font-size:130%;"><strong>■健康維持</strong></p>
+            <p>　運動強度やレベルを自分自信で選べます。</p>
+            <p style="font-size:130%;"><strong>■仲間ができる</strong></p>
+            <p>　テニスのおかげで友達ができて、</p>
+            <p>　交友関係が広がり</p>
+            <p>　みんなで目標を持ってスポーツをすると</p>
+            <p>　一体感がうまれ、</p>
+            <p>　より信頼関係が深まります。</p>
+            <br>
+            <p style="font-size:130%;">テニスをしたことがない方でも絶対に楽しめます。</strong></p>
+          </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="waku">
+          <h3>活動内容</h3>
+          <div style="text-align:left;">
+            <p style="font-size:130%;">■練習</strong></p>
+            <p>　正確に打てるようにストロークの練習</p>
+            <p>　リターンとボレーの練習</p>
+            <p>　スマッシュの練習</p>
+            <p>　サーブの練習</p>
+            <p>　試合形式で練習</p>
+            <p style="font-size:130%;">■大会</strong></p>
+            <p>　上達していけば、地方で開催されている</p>
+            <p>　大会にも出場していきたいです。</p>
+            <p>　ダブルス中心に参加していきます。</p>
+            <br>
+            <p style="font-size:130%;">私達と一緒に目標に向かって頑張ってみませんか。</strong></p>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <div id="badminton">
+    <div class="container">
+      <div class="page-title2">
+        <h2><span>BADMINTON</span></h2>
+      </div>
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="waku2">
+          <h3>バドミントンの魅力</h3>
+          <div style="text-align:left;">
+            <p style="font-size:130%;">■始めやすい</strong></p>
+            <p>一度くらいはバドミントンをした経験があると思います。</p>
+            <p>誰でも手軽にできるのがバドミントンの魅力です。</p>
+            <p style="font-size:130%;">■スピード感</strong></p>
+            <p>羽根の最高スピードは400キロを超える場合があります。</p>
+            <p>上達していけば、かなりはやいスピードで打てるようになります。</p>
+            <iframe width="100%" height="302px" src="http://www.youtube.com/embed/_xXGGx9KuAI?rel=0&modestbranding=0&showinfo=0&fs=0&controls=1&autohide=1&vq=hd1080" frameborder="0" allowfullscreen></iframe>
+            <p>バドミントン日本リーグ所属クラブチーム「トリッキーパンダース」の動画です。</p>
+            <p style="font-size:130%;">こんなスーパープレーを見ればバドミントンをやりたくなるに間違いなしです。</strong</p>
+          </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="waku3">
+          <h3>活動内容</h3>
+          <div style="text-align:left;">
+            <p style="font-size:130%;">■練習</strong></p>
+            <p>　色んな種類のショットを練習</p>
+            <p>　・スマッシュ</p>
+            <p>　・ジャンピングスマッシュ</p>
+            <p>　・ドロップ</p>
+            <p>　・カット</p>
+            <p>　・プッシュ</p>
+            <p>　・ヘアピン</p>
+            <p>　・クロスネット</p>
+            <p>　・ドライブ</p>
+            <p>　・ロブ</p>
+            <p>　・ハイクリア</p>
+            <p>　・ドリブンクリア</p>
+            <p>　ダブルスメインで試合</p>
+            <p style="font-size:130%;">■大会</strong></p>
+            <p>テニス同様、上達していけば大会に出場していきます。</p>
+            <br>
+            <p style="font-size:130%;">是非私達と一緒に汗を流しませんか。</strong></p>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bado">
+  <div id="schdule">
+    <div class="container">
+      <div class="page-title">
+        <h2><span>SCHDULE</span></h2>
+      </div>
+      <div class="row">
+        <div class="col-sm-12">
+          <p><strong>【9月テニス練習日】</strong></p>
+          <p>09月15日(月)11時～13時<br>場所：祖父江の森テニスコート<br>参加費：200円</p>
+          <br>
+          <p><strong>【9月バドミントン練習日】</strong></p>
+          <p>09月28日(日)09時～12時<br>場所：天白スポーツセンター第2競技場<br>バドミントンクラブハウスChick主催<br><a href="http://www.chick-bch.com/">「池ちゃんと遊ぼう！」</a><br>参加費：1000円</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <div id="gallery">
+    <div class="container">
+      <div class="page-title2">
+        <h2><span>GALLERY</span></h2>
+      </div>
+      <div class="flexslider">
+        <ul class="slides">
+          <li>
+            <img src="img/slider1.jpg" alt="slider1">
+          </li>
+          <li>
+            <img src="img/slider2.jpg" alt="slider2">
+          </li>
+          <li>
+            <img src="img/slider3.jpg" alt="slider3">
+          </li>
+        </ul>
+      </div>
+   </div>
+  </div>
+
+  <div id="contact">
+    <div class="container">
+      <div id="textleft">
+        <div class="page-title">
+          <h2><span>CONTACT</span></h2>
+        </div>
+        <div class="row">
+          <div class="col-sm-6">
+            <p>
+              テニバドサークル「SMASH!!」に興味がある方は、<br>
+              何でも気軽にお問い合わせ下さい。<br>
+              参加希望の方は、まずは体験入部としてご参加下さい。<br>
+              お待ちしております。
+            </p>
+
+            <div id="contact-form">
+              <form>
+                <fieldset>
+                  <dl>
+                    <dt>■ お名前 <span class="worn">*必須</span></dt>
+                    <dd>
+                      <input class="col-sm-12 def fm" tabindex="1" id="name" name="name" value="" type="text" placeholder="おなまえ" >
+                    </dd>
+                  </dl>
+                  <dl>
+                    <dt>■ 年齢 <span class="worn">*必須</span></dt>
+                    <dd>
+                      <input class="col-sm-12 def fm" tabindex="2" id="old" name="old" value="" type="text" placeholder="ねんれい">
+                    </dd>
+                  </dl>
+                  <dl>
+                    <dt>■ お住まい <span class="worn">*必須</span></dt>
+                    <dd>
+                      <input class="col-sm-12 def fm" tabindex="3" id="adress" name="adress" value="" type="text" placeholder="おすまい">
+                    </dd>
+                  </dl>
+                  <dl>
+                    <dt>■ メールアドレス <span class="worn">*必須</span></dt>
+                    <dd>
+                      <input class="col-sm-12 def fm" tabindex="4" id="email" name="email" value="" type="text" placeholder="めーるあどれす">
+                    </dd>
+                  </dl>
+                  <dl>
+                    <dt>■ メッセージ <span class="worn">*必須</span></dt>
+                    <dd>
+                      <textarea class="col-sm-12 def fm" tabindex="5" id="message" name="message" rows="7" accesskey="B" placeholder="めっせーじ！！"></textarea>
+                    </dd>
+                  </dl>
+                  <div id="fm_button">
+                    <input tabindex="6" type="button" id="reset" class="btn btn-success def" value=" リセット ">
+                    <input tabindex="7" type="button" id="check" class="btn btn-success def" value=" 送信内容の確認 ">
+                    <input tabindex="8" type="button" id="back" class="btn btn-success hide" value=" 訂正 ">
+                    <input tabindex="9" type="button" id="send" name="submit" class="btn btn-success hide" value=" 送信 ">
+                  </div>
+                </fieldset>
+              </form>
+            </div>
+            <br>
+          </div>
+          <div class="col-sm-6">
+            <p>
+              場所：<a href="http://www.city.inazawa.aichi.jp/sisetu/sobue/top.html">祖父江の森テニスコート</a><br>
+              住所：愛知県稲沢市祖父江町桜方六町17<br>
+              電話番号：0587-97-8880<br>
+              名鉄尾西線「森上駅」徒歩15分
+            </p>
+            <div id="googlemaps">
+              <div id="map"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="foot">
+    <footer class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div id="copyright">
+            Copyright &copy; 2014 テニバドサークル「SMASH!!」 All Rights Reserved.
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <p id="page-top"><a href="">TOPへ</a></p>
+
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
+  <script type="text/javascript" src="js/svg_inject_flat_icons_line.js"></script>
+  <script type="text/javascript" src="js/jquery.gmap.min.js"></script>
+  <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
+  <script type="text/javascript" src="js/jquery.lazylinepainter-1.4.1.min.js"></script>
+  <script type="text/javascript" src="js/raphael-min.js"></script>
+  <script type="text/javascript" src="js/title.js"></script>
+  <script type="text/javascript" src="js/jquery.validate.min.js"></script>
+  <script type="text/javascript">
+
+    //コンタクトフォーム
+    $(document).ready(function(){
+
+      //フォーム入力エラー
+      $(function(){
+        $("form").validate({
+          rules: {
+            name :{
+              required: true,
+              minlength: 2
+            },
+            old :{
+              required: true,
+              minlength: 2
+            },
+            adress :{
+              required: true,
+              minlength: 2
+            },
+            email :{
+              required: true,
+              email: true
+            },
+            message :{
+              required: true,
+              minlength: 5
+            }
+          },
+          messages: {
+            name :{
+              required: "お名前を入力してください",
+              minlength: "フルネームで入力してください"
+            },
+            old :{
+              required: "年齢を入力してください",
+              minlength: "年齢を入力してください"
+            },
+            adress :{
+              required: "お住まいを入力してください",
+              minlength: "お住まいを入力してください"
+            },
+            email :{
+              required: "メールアドレスを入力してください",
+              email: "正しいメールアドレスを入力してください"
+            },
+            message :{
+              required: "お問い合わせメッセージを入力してください",
+              minlength: "お問い合わせメッセージを入力してください"
+            }
+          }
+        });
+      })
+
+      //送信内容の確認ボタン
+      $(document).on('click','#check',function(){
+
+        if (!$("form").valid()) {
+          return false;
+        };
+
+        $(".fm").each( function() {
+          var id = $(this).attr("id");
+          var fm = $("#"+id);
+          switch( fm.prop("type") ){
+            case 'text':
+            case 'password':
+            case 'select-one':
+              $(fm).after('<span class="hide del">'+fm.val()+'<'+'/span>');
+            break;
+            case 'radio':
+              var val = $("#"+id+":checked");
+              if( $(val).prop('checked') ) {
+                $(fm).after('<span class="hide del">'+val.val()+'<'+'/span>');
+              }
+            break;
+            case 'checkbox':
+              var val = $("#"+id+":checked");
+              if( $(val).prop('checked') ) {
+                $(fm).after('<span class="hide del">'+val.val()+'<'+'/span>');
+              }
+            break;
+            case 'textarea':
+              var val = fm.val();
+              val = val.replace(/\n/g, "<br />");
+              $(fm).after('<span class="hide del">'+val+'<'+'/span>');
+            break;
+          }
+        });
+
+        change(true);
+      });
+
+      //リセットボタン
+      $(document).on('click','#reset',function(){
+        reset();
+      });
+
+      //訂正ボタン
+      $(document).on('click','#back',function(){
+        change();
+      });
+
+      //送信ボタン
+      $(document).on('click','#send',function(){
+        var dataString = $("form").serialize();
+        // console.log('出力 : %s', dataString);
+        $.ajax({
+          type: "POST",
+          url: "form/contact.php",
+          data: dataString,
+          success: function(data) {
+            // console.log(data);
+          },
+          error: function() {
+            alert("送信出来ませんでしたので、しばらくお待ち下さい。");
+          }
+        });
+
+        $("#contact-form").html('<p><br><br>お問い合わせありがとうございました。<br>送信が完了しました。<'+'/p><p>2日以内に返信致しますので、<br>返信メールが届くまでしばらくお待ちください。<'+'/p>');
+        reset();
+      });
+
+      //フォーム初期化
+      var reset = function(type){
+          $('input,textarea').not('input[type=\"radio\"],input[type=\"checkbox\"],:hidden, :button, :submit,:reset').val('');
+          $('input[type=\"radio\"], input[type=\"checkbox\"],select').removeAttr('checked').removeAttr('selected');
+          $("option").attr('selected',false);
+      };
+
+      //表示・非表示を制御
+      var change = function(type) {
+        if(type === true) {
+          $(".def").hide();
+          $(".hide").show();
+        }
+        else {
+          $(".def").show();
+          $(".hide").hide();
+          $(".del").remove();
+        }
+      };
+    });
+
+    //スクロールフェードイン(未実装)
+    $(function() {
+      var setElm = $('.fade'),
+      delayHeight = 100;
+      setElm.css({display:'block',opacity:'1.0'});
+      $('html,body').animate({scrollTop:0},1);
+      $(window).on('load scroll resize',function() {
+        setElm.each(function() {
+          var setThis = $(this),
+          elmTop = setThis.offset().top,
+          elmHeight = setThis.height(),
+          scrTop = $(window).scrollTop(),
+          winHeight = $(window).height();
+          if (scrTop > elmTop - winHeight + delayHeight && scrTop < elmTop + elmHeight) {
+            setThis.stop().animate({left:'0',opacity:'1.0'},100); // 上からスクロールしてきた時のイベント
+          }
+          else if (scrTop < elmTop - winHeight + delayHeight && scrTop < elmTop + delayHeight) {
+            setThis.stop().animate({left:'-500',opacity:'1.0'},100); // 下からスクロールしてきた時のイベント
+          }
+        });
+      });
+    });
+
+    // TOPへ戻る
+    $(function() {
+        var showFlag = false;
+        var topBtn = $('#page-top');
+        topBtn.css('bottom', '-100px');
+        var showFlag = false;
+        //スクロールが100に達したらボタン表示
+        $(window).scroll(function () {
+          if ($(this).scrollTop() > 100) {
+            if (showFlag == false) {
+              showFlag = true;
+              topBtn.stop().animate({'bottom' : '20px'}, 200);
+            }
+          }
+          else if (showFlag) {
+            showFlag = false;
+            topBtn.stop().animate({'bottom' : '-150px'}, 200);
+          }
+        });
+        //スクロールしてトップ
+        topBtn.click(function () {
+          $('body,html').animate({
+            scrollTop: 0
+          }, 500);
+          return false;
+        });
+    });
+
+    //GoogleMap
+    $('#map').gMap({
+      controls: {
+        panControl: true,
+        zoomControl: true,
+        mapTypeControl: false,
+        scaleControl: true,
+        streetViewControl: false,
+        overviewMapControl: true
+      },
+      maptype: 'ROADMAP',
+      scrollwheel: true,
+      zoom: 13,
+      markers: [
+        {
+          address: '祖父江の森 テニスコート',
+          html: '',
+          popup: false,
+        }
+      ],
+    });
+
+    //スライダー
+    $(window).load(function() {
+      $('.flexslider').flexslider({
+        animation: "slide",
+        slideshowSpeed: "5000"
+      });
+    });
+
+    //スムーススクロール
+    $(function(){
+       $('a[href^=#]').click(function() {
+          var speed = 800;
+          var href= $(this).attr("href");
+          var target = $(href == "#" || href == "" ? 'html' : href);
+          var position = target.offset().top - 50;
+          $('body,html').animate({scrollTop:position}, speed, 'swing');
+          return false;
+       });
+    });
+
+    //タイトルSVGアニメーション
+    $(document).ready(function(){
+      $('#titlesvg').lazylinepainter(
+      {
+        "svgData": pathObj,
+        "strokeWidth": 6,
+        "strokeColor": "#FFFFFF"
+      }).lazylinepainter('paint');
+
+      $('#titlesvg2').lazylinepainter(
+      {
+        "svgData": pathObj,
+        "strokeWidth": 2,
+        "strokeColor": "#FFFFFF"
+      }).lazylinepainter('paint');
+    });
+
+    //パララックス背景
+    $(window).scroll(function(e){
+      parallax();
+    });     
+    function parallax(){
+      var scrolled = $(window).scrollTop();
+      $('.para').css('top',-(scrolled*0.2)+'px');
+    }
+
+  </script>
+</body>
 </html>

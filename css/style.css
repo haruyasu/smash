@@ -1,0 +1,469 @@
+/* 全体 */
+body {
+	/*background-image: url(../img/bk.png);*/
+	margin: 0;
+	padding: 0;
+	line-height:1.6;
+}
+
+body,input,textarea {
+    font-family: 
+        'Open Sans', Georgia,
+        "ヒラギノ角ゴ ProN W3",
+        "Hiragino Kaku Gothic ProN",
+        SourceHanSansJP-Regular,
+        Meiryo,
+        sans-serif;
+}
+
+.container {
+	text-align: center;
+}
+.container-fluid {
+	text-align: center;
+}
+a {
+	text-decoration: none;
+	color: #00FFFF;
+}
+p a:hover {
+	text-decoration: none;
+	color: orange;
+}
+p {
+	color: white;
+}
+
+h3 {
+	margin: 20px 0;
+	color: white;
+}
+
+dl {
+	margin-bottom: 0px;
+}
+
+dt, dd {
+	color: #fff;
+}
+
+/* 個別 */
+#home {
+	padding-top: 50px;
+}
+#home h2 {
+	margin: 0;
+	color: white;
+}
+#about {
+	background-color: Navy;
+	padding: 50px 0;
+	opacity: 0.9;
+}
+#about h2 {
+	margin: 0 0 50px 0;
+	color: white;
+}
+#member {
+	/*background-color: Teal;*/
+	padding: 50px 0;
+}
+#member h2 {
+	margin: 0 0 50px 0;
+	color: black;
+}
+#member p {
+	color: black;
+}
+
+#tennis {
+	background-color: #FF8C00;
+	opacity: 0.96;
+	padding: 50px 0;
+}
+#tennis h2 {
+	margin: 0 0 50px 0;
+	color: white;
+}
+#badminton {
+	padding: 50px 0;
+}
+#badminton h2 {
+	margin: 0 0 50px 0;
+	color: black;	
+}
+#badminton h3 {
+	color: black;
+}
+#badminton p {
+	color: black;	
+}
+
+#schdule {
+	background-color: Green;
+	padding: 50px 0;
+	opacity: 0.9;
+}
+#schdule h2 {
+	margin: 0 0 50px 0;
+	color: white;
+}
+#gallery {
+	/*background-color: Purple;*/
+	padding: 50px 0;
+}
+#gallery h2 {
+	margin: 0 0 50px 0;
+	color: black;
+}
+#contact {
+	background-color: black;
+	padding: 50px 0 20px 0;
+	opacity: 0.9;
+}
+#contact h2 {
+	margin: 0 0 50px 0;
+	color: white;
+	text-align: center;
+}
+#textleft {
+	text-align: left;
+}
+
+#foot {
+	padding: 30px 0;
+}
+
+/* ページタイトル線白 */
+.page-title h2 {
+	position: relative;
+}
+
+.page-title h2:before,
+.page-title h2:after {
+    height: 1px;
+    content: " ";
+    width: 30%;
+    position: absolute;
+    top: 0.53em;
+	z-index: 1;
+}
+
+.page-title h2:before {
+	background: -moz-linear-gradient(left,  rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(255,255,255,0)), color-stop(100%,rgba(255,255,255,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(left,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(left,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(left,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%); /* IE10+ */
+	background: linear-gradient(to right,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 */
+    left: 0;
+}
+
+.page-title h2:after {
+	background: -moz-linear-gradient(left,  rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(left,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(left,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(left,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* IE10+ */
+	background: linear-gradient(to right,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 */
+   	right: 0;
+   	left: auto;
+}
+
+/* ページタイトル線黒 */
+.page-title2 h2 {
+	position: relative;
+}
+
+.page-title2 h2:before,
+.page-title2 h2:after {
+    height: 1px;
+    content: " ";
+    width: 30%;
+    position: absolute;
+    top: 0.53em;
+	z-index: 1;
+}
+
+.page-title2 h2:before {
+	background: -moz-linear-gradient(left,  rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(left,  rgba(0,0,0,0) 0%,rgba(0,0,0,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(left,  rgba(0,0,0,0) 0%,rgba(0,0,0,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(left,  rgba(0,0,0,0) 0%,rgba(0,0,0,1) 100%); /* IE10+ */
+	background: linear-gradient(to right,  rgba(0,0,0,0) 0%,rgba(0,0,0,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 */
+    left: 0;
+}
+
+.page-title2 h2:after {
+	background: -moz-linear-gradient(left,  rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(0,0,0,1)), color-stop(100%,rgba(0,0,0,0))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(left,  rgba(0,0,0,1) 0%,rgba(0,0,0,0) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(left,  rgba(0,0,0,1) 0%,rgba(0,0,0,0) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(left,  rgba(0,0,0,1) 0%,rgba(0,0,0,0) 100%); /* IE10+ */
+	background: linear-gradient(to right,  rgba(0,0,0,1) 0%,rgba(0,0,0,0) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 */
+   	right: 0;
+   	left: auto;
+}
+
+/* TOPIMG NAME */
+#toptitle {
+	width: 100%;
+	min-height: 450px;
+	background-size: cover;
+	background-position: center;
+	text-align: center;
+}
+
+#titlesvg2 {
+	margin: 0 auto;
+	padding-top: 140px;	
+}
+#titlesvg {
+	margin: 0 auto;
+}
+
+.avatar img {
+	width: 200px;
+}
+
+.team-name {
+	font-size: 22px;
+	padding: 15px 0px 5px 0px;
+}
+
+.position {
+	font-size: 17px;
+	margin-bottom: 10px;
+}
+
+/* Contact Form */
+#contact-form input:-moz-placeholder,
+#contact-form textarea:-moz-placeholder {
+  	color: #C0C0C0;
+}
+
+#contact-form input:-ms-input-placeholder,
+#contact-form textarea:-ms-input-placeholder {
+  	color: #C0C0C0;
+}
+
+#contact-form input::-webkit-input-placeholder,
+#contact-form textarea::-webkit-input-placeholder {
+  	color: #C0C0C0;
+}
+
+#contact-form input[type="text"] {
+	width: 100%;
+	border: 0px;
+	margin-bottom: 10px;
+	margin-top: 5px;
+	height: 40px;
+	color: white;
+	background: rgba(99,99,99,0.9) !important;
+	-webkit-box-shadow: none;
+	   -moz-box-shadow: none;
+		    box-shadow: none;
+	-webkit-border-radius: 0px;
+	   -moz-border-radius: 0px;
+			border-radius: 0px;
+}
+
+#contact-form textarea {
+	width: 100%;
+	border: 0px;
+	margin-top: 5px;
+	margin-bottom: 10px;
+	color: white;
+	background: rgba(99,99,99,0.9) !important;
+	-webkit-box-shadow: none;
+	   -moz-box-shadow: none;
+		    box-shadow: none;
+	-webkit-border-radius: 0px;
+	   -moz-border-radius: 0px;
+			border-radius: 0px;
+}
+
+/* Google Map */
+#googlemaps {
+	padding: 23px 10px 30px 10px;
+	position: relative;
+}
+
+#map {
+	height: 446px;
+	/*height: 400px;*/
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+/* ナビゲーション */
+.navbar-inverse .navbar-nav > li > a {
+	color: white;
+}
+
+.navbar-nav {
+    margin: 0 auto;
+    display: table;
+    table-layout: fixed;
+    float:none;
+}
+
+.navbar-brand {
+	background: url("../img/logo.png") no-repeat left center;
+	background-size: contain;
+	height: 50px;
+	width: 250px;
+}
+.navbar-brand:hover {
+	opacity: 0.8;
+}
+
+.navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand {
+	margin-left: 10px;
+}
+
+#about-li:hover {
+	background-color: navy;
+}
+#member-li:hover {
+	background-color: #32CD32;
+}
+#tennis-li:hover {
+	background-color: #FF8C00;
+}
+#badminton-li:hover {
+	background-color: #00BFFF;
+}
+#schdule-li:hover {
+	background-color: green;
+}
+#gallery-li:hover {
+	background-color: #FF6347;
+}
+#contact-li:hover {
+	background-color: #708090;
+}
+
+/* TOPへ戻る */
+#page-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 80%;
+    z-index: 999;
+}
+#page-top a {
+    color: #fff;
+	padding: 10px;
+    text-align: center;
+    display: block;
+    z-index: 999;
+	background: -moz-linear-gradient(
+		top,
+		#ff6333 0%,
+		#d94214);
+	background: -webkit-gradient(
+		linear, left top, left bottom,
+		from(#ff6333),
+		to(#d94214));
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	border: 0px solid #999999;
+	-moz-box-shadow:
+		0px 1px 3px rgba(000,000,000,0.6),
+		inset 0px 0px 2px rgba(242,242,242,0.7);
+	-webkit-box-shadow:
+		0px 1px 3px rgba(000,000,000,0.6),
+		inset 0px 0px 2px rgba(242,242,242,0.7);
+	box-shadow:
+		0px 1px 3px rgba(000,000,000,0.6),
+		inset 0px 0px 2px rgba(242,242,242,0.7);
+	text-shadow:
+		0px -1px 0px rgba(000,000,000,1),
+		0px 1px 0px rgba(255,255,255,0.3);
+}
+#page-top a:hover {
+    text-decoration: none;
+    opacity: 0.8;
+    z-index: 999;
+}
+
+/* フェード */
+.fade {
+	display: none;
+}
+
+/* フォーム */
+#fm_button {
+    text-align: center;
+}
+#fm_button input {
+	margin: 10px 5px;
+}
+
+span.hide.del {
+	padding: 0px 15px;
+	/*margin-bottom: 20px;*/
+	/*line-height: 55px;*/
+	line-height: 30px;
+}
+/* パララックス背景 */
+.para {
+  background: url("../img/bk.png") repeat;
+  position: fixed;
+  width: 100%;
+  height: 400%;
+  top: 0;
+  left: 0;
+  z-index: -10;
+}
+/* フォーム入力エラー */
+.error {
+	color: red;
+}
+.worn {
+	color: orange;
+}
+
+.teni {
+	background: url("../img/teni.png") no-repeat fixed;
+	background-position: right;
+	z-index: -1;
+}
+.tenibk {
+	background: url("../img/tennis_bk.png") no-repeat fixed;
+	background-position: center;
+	z-index: -1;
+}
+.bado {
+	background: url("../img/bado.png") no-repeat fixed;
+	background-position: left;
+	z-index: -1;
+}
+
+.le_ri_pa {
+	padding: 0 40px;
+}
+
+.waku {
+	box-shadow:3px 3px 3px 3px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+	padding: 10px 10px 10px;
+    background-color: #D2691E;
+}
+.waku2 {
+    margin-bottom: 20px;
+	padding: 5px 10px 5px;
+}
+.waku3 {
+    margin-bottom: 20px;
+	padding: 5px 10px 5px;
+	background: url(../img/hitu.png) no-repeat;
+	background-position: right;
+}
